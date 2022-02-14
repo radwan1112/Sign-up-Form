@@ -136,7 +136,8 @@ input:focus {
 
 input[type="text"]:valid,
 input[type="email"]:valid,
-input[type="password"]:valid {
+input[type="password"]:valid,
+input[type="tel"]:valid {
   background: url(images/icons8-check-circle.svg) no-repeat;
   background-position-x: 5px;
   background-position-y: center;
@@ -193,4 +194,3 @@ a {
   font-weight: 600;
   text-decoration: none;
 }
-
