@@ -125,14 +125,40 @@ label {
 input {
   border: 2px solid #c7c5c5;
   width: 80%;
-  padding: 4px;
-  border-radius: 5px;
+  padding: 5px 2px 5px 30px;
 }
 
 input:focus {
   outline: none;
   border: 2px solid;
   border-color: gray;
+}
+
+input[type="text"]:valid,
+input[type="email"]:valid,
+input[type="password"]:valid {
+  background: url(images/icons8-check-circle.svg) no-repeat;
+  background-position-x: 5px;
+  background-position-y: center;
+}
+
+.error-message {
+  color: red;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.error-message::before {
+  background: url(images/icons8-close.svg) no-repeat;
+  background-size: 16px;
+  background-position: center;
+  width: 22px;
+  height: 18px;
+  position: relative;
+  top: 4px;
+  right: 2px;
+  display: inline-block;
+  content: "";
 }
 
 .btn {
@@ -155,15 +181,16 @@ input:focus {
 }
 
 .text {
-    font-size: 1.2rem;
-    font-weight: 600;
-    color: #333232ee;
-    margin: 20px 0 0 0;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #333232ee;
+  margin: 20px 0 0 0;
 }
 
 a {
-    color: var(--green-color);
-    font-size: 1.3rem;
-    font-weight: 600;
-    text-decoration: none;
+  color: var(--green-color);
+  font-size: 1.3rem;
+  font-weight: 600;
+  text-decoration: none;
 }
+
